@@ -5,11 +5,11 @@ const ListBox = (props) => {
   const article = props;
   return (
     <div className="grid grid-flow-col grid-cols-8 w-full rounded-xl p-5 hover:bg-[#30475E] hover:bg-opacity-10 ">
-      <div className="col-span-6">
+      <div className="col-span-5">
         <div className="text-xl font-bold ">{article.title}</div>
         <div>{article.content}</div>
       </div>
-      <div className=" text-[#30475E]">{article.tag}</div>
+      <div className="col-span-2 text-[#30475E]">{article.tag}</div>
       <div>{article.date}</div>
     </div>
   );
