@@ -23,7 +23,7 @@ function Topbar() {
           로그인
         </Link>
       </div>
-      <div className="flex flex-row flex-nowrap justify-around text-center">
+      <div className="flex flex-row flex-nowrap justify-around text-center pb-2">
         <Link
           to="/board/notice"
           id="notice"
@@ -70,7 +70,8 @@ function Topbar() {
         >
           족보
         </Link>
-      </div>
+      </div>{' '}
+      <hr />
     </div>
   );
 }
