@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Topbar() {
-  let [active, setActive] = useState('notice');
+  let [active, setActive] = useState('');
   const changeActive = (e) => {
     setActive(() => {
       return e.target.id;
@@ -12,7 +12,11 @@ function Topbar() {
   return (
     <div className="pb-10">
       {' '}
-      <div className="px-4 text-center text-4xl font-bold">Jaram</div>
+      <div className="px-4 text-center text-4xl font-bold">
+        <Link to="/" id="home" onClick={changeActive}>
+          Jaram
+        </Link>
+      </div>
       <div className="flex justify-end gap-1 h-8">
         <img src="../image/search_FILL1_wght400_GRAD0_opsz48.svg" alt="search" className="w-8 h-8" />
         <Link to="/user/signup" className="px-2 py-1 bg-[#f054548d] rounded-md">

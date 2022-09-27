@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Topbar from './Topbar';
+import Topbar from './components/Topbar';
+import Main from './page/Main';
 import User from './page/User';
 import Notice from './page/Notice';
 import Free from './page/Free';
@@ -16,6 +17,7 @@ function App() {
     <div className="px-20 py-10">
       <Topbar />
       <Routes>
+        <Route path="/" element={<Main />} />
         <Route path="/board">
           <Route path="notice" element={<Notice />} />
           <Route path="free" element={<Free />} />
