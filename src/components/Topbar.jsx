@@ -12,17 +12,17 @@ function Topbar() {
   return (
     <div className="pb-10">
       {' '}
-      <div className="px-4 pb-2 text-center text-4xl font-bold">Jaram</div>
-      <hr />
-      <div className="text-right py-2">
-        <span className="px-1">돋보기</span>
-        <Link to="/user/signup" className="px-1">
+      <div className="px-4 text-center text-4xl font-bold">Jaram</div>
+      <div className="flex justify-end gap-1 h-8">
+        <img src="../image/search_FILL1_wght400_GRAD0_opsz48.svg" alt="search" className="w-8 h-8" />
+        <Link to="/user/signup" className="px-2 py-1 bg-[#f054548d] rounded-md">
           회원가입
         </Link>
-        <Link to="/user/login" className="px-1">
+        <Link to="/user/login" className="px-2 py-1 bg-[#f0545459] rounded-md">
           로그인
         </Link>
-      </div>
+      </div>{' '}
+      <hr className="pb-2" />
       <div className="flex flex-row flex-nowrap justify-around text-center pb-2">
         <Link
           to="/board/notice"
